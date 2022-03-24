@@ -1,7 +1,8 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
-import Nav from '../components/NavBar';
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Home() {
   return (
@@ -12,6 +13,92 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <div className={styles.hero}>
+        <div className='heading'>
+          <h1>
+            Artisan workmanship, <br />
+            At reasonable pricing
+          </h1>
+        </div>
+        <div className='contactForm'>
+          <form>
+            <div className='form-title'>
+              <h3>Get a FREE Estimate Today!</h3>
+              <h5>No cost,zero commitments!</h5>
+            </div>
+            <div className='form-inputGroup'>
+              <input type='text' name='name' placeholder='Name' />
+              <input type='text' name='phone' placeholder='Phone Number' />
+              <input type="email" name="email" placeholder='Email' pattern=".+@globex\.com" required />
+              <small>* We do not share your personal info with 3rd parties</small>
+              <input type='submit' value='Submit' />
+            </div>
+          </form>
+        </div>
+      </div>
+      <div className='briefing'>
+        <article className='mission text-left'>
+          <div className='text'>
+            <h3>Mission and Vision</h3>
+            <p>It is our mission to provide excellent workmanship and complete customer satisfaction from start to completion of a project. In order to understand the needs and expectations of our customers, we take great care to work and communicate with every customer in a professional manner. Our reputation is based on service, safety, and quality, regardless of how large or small the job is.</p>
+          </div>
+          <div className='image'></div>
+        </article>
+        <article className='professional text-right'>
+          <div className='image'></div>
+          <div className='text'>
+            <h3>Professional Service</h3>
+            <p>The most important aspect of your home is the people you share it with. The second most important part of your home is your roof. A safe, secure, qualify roof protects your family and home. We provide complete roofing services that guarantee you’ll go to sleep at night feeling sheltered and secure.</p>
+          </div>
+        </article>
+      </div>
+      <div className='callToAction'>
+        <h2>Call us today 541-890-6463</h2>
+      </div>
+      <div className='ourServices'>
+        <div className='heading'>
+          <h2>Our Services</h2>
+          <Image src='/logo_1.png' width={128} height={77} />
+        </div>
+        <div className='cards'>
+          <article className='card'>
+            <Image src='/vercel.svg' width={300} height={300} />
+            <div>
+              <p>Consultation <FontAwesomeIcon icon={faChevronRight} /></p>
+            </div>
+          </article>
+          <article className='card'>
+            <Image src='/vercel.svg' width={300} height={300} />
+            <div>
+              <p>Residential <FontAwesomeIcon icon={faChevronRight} /></p>
+            </div>
+          </article>
+          <article className='card'>
+            <Image src='/vercel.svg' width={300} height={300} />
+            <div>
+              <p>Commercial <FontAwesomeIcon icon={faChevronRight} /></p>
+            </div>
+          </article>
+          <article className='card'>
+            <Image src='/vercel.svg' width={300} height={300} />
+            <div>
+              <p>Improvement <FontAwesomeIcon icon={faChevronRight} /></p>
+            </div>
+          </article>
+          <article className='card'>
+            <Image src='/vercel.svg' width={300} height={300} />
+            <div>
+              <p>Cleaning <FontAwesomeIcon icon={faChevronRight} /></p>
+            </div>
+          </article>
+          <article className='card'>
+            <Image src='/vercel.svg' width={300} height={300} />
+            <div>
+              <p>Repair <FontAwesomeIcon icon={faChevronRight} /></p>
+            </div>
+          </article>
+        </div>
+      </div>
     </div>
   )
 }

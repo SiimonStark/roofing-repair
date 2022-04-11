@@ -14,19 +14,19 @@ export default function Home() {
       </Head>
 
       <div className={styles.hero}>
-        <div className='heading'>
+        <div className={styles.heading}>
           <h1>
             Professional workmanship, <br />
             At reasonable pricing
           </h1>
         </div>
-        <div className='contactForm'>
+        <div className={styles.contactForm}>
           <form>
-            <div className='form-title'>
+            <div className={styles.formTitle}>
               <h3>Get a FREE Estimate Today!</h3>
-              <h5>No cost,zero commitments!</h5>
+              <h5>No cost, zero commitments!</h5>
             </div>
-            <div className='form-inputGroup'>
+            <div className={styles.formInputGroup}>
               <input type='text' name='name' placeholder='Name' />
               <input type='text' name='phone' placeholder='Phone Number' />
               <input type="email" name="email" placeholder='Email' pattern=".+@globex\.com" required />
@@ -36,17 +36,21 @@ export default function Home() {
           </form>
         </div>
       </div>
-      <div className='briefing'>
-        <article className='mission text-left'>
-          <div className='text'>
+      <div className={styles.briefing}>
+        <article className={styles.briefingTextleft}>
+          <div className={styles.briefingText}>
             <h3>Mission and Vision</h3>
             <p>As Southern Oregon’s only premier Veteran owned and operated roofing company, we provide the best quality products, professional workmanship and warranties. And that’s the sasquatch promise!</p>
           </div>
-          <div className='image'></div>
+          <div className={styles.briefingImage}>
+            <img src='https://images.unsplash.com/photo-1505027368917-30e7dd23ced4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MjJ8QUFMc3ltbHRmMXd8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=60' />
+          </div>
         </article>
-        <article className='professional text-right'>
-          <div className='image'></div>
-          <div className='text'>
+        <article className={styles.briefingTextRight}>
+          <div className={styles.briefingImage}>
+            <img src='https://images.unsplash.com/photo-1603239564387-c5b5ea6f635e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8Mzh8QUFMc3ltbHRmMXd8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=60' />
+          </div>
+          <div className={styles.briefingText}>
             <h3>Professional Service</h3>
             <p>At Bigfoot Roofing we understand that every home is as unique as the family who lives inside them. That is why we are committed to handling every project on a case by case basis. On our fist meeting we listen to the homeowners concerns. We then physically inspect your entire roofing system, inside and out. We identify high risk leak areas, signs of previous leaks and mold, structural integrity and proper air flow to ensure that your home will breathe properly and stand strong for many years to come.
             </p>

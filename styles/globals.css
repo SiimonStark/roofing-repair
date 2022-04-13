@@ -3,6 +3,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 /* Nav Styles */
@@ -48,3 +53,29 @@ nav a {
 }
 
 /* Footer Styles */
+footer {
+  background-color: #43513D;
+  border-top: 5px solid #13210B;
+  border-bottom: 3px solid #13210B;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 5vw;
+}
+
+footer a {
+  color: #13210B;
+  transition: color .2s ease-in-out;
+}
+
+footer a:hover {
+  color: #FF9147;
+}
+
+.links-bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  gap: 10px 5px;
+  font-size: 14px;
+  margin: 15px 0;
+}

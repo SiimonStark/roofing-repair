@@ -13,13 +13,16 @@
 
 .hero .heading {
     color: white;
-    text-shadow: 0px 0px 4px rgba(0, 0, 0, .7);
+    text-shadow:
+        0px 0px 8px rgba(0, 0, 0, .9),
+        1px 1px 2px rgba(0, 0, 0, .9);
     display: flex;
     align-items: center;
     justify-content: center;
     /* width: 40%; */
     /* height: 100%; */
     margin: 0 auto;
+    letter-spacing: 2px;
 }
 
 .hero .contactForm {
@@ -78,16 +81,35 @@
     padding: 20px;
 }
 
+.briefing article:first-child {
+    background-color: #43513D !important;
+    color: white;
+    height: fit-content !important;
+    min-height: fit-content !important;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 50px auto 150px auto;
+}
+
+.briefing article:first-child div {
+    width: 100%;
+}
+
 .briefing article {
     position: relative;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     height: fit-content;
     background: rgba(130, 133, 129, 0.59);
-    margin: 80px auto;
+    margin: 0 auto;
+    margin-bottom: 200px;
     padding: 15px;
-    height: 250px;
+    height: fit-content;
+    min-height: 200px;
     width: 90%;
+    max-width: 1200px;
 }
 
 .briefing article .briefingImage {
@@ -98,7 +120,7 @@
 .briefingTextleft .briefingImage img {
     position: absolute;
     right: -30px;
-    top: -25px;
+    top: -25%;
     height: 300px;
     box-shadow:
         -1px -1px 1px rgba(150, 150, 150, .3),
@@ -108,7 +130,7 @@
 .briefingTextRight .briefingImage img {
     position: absolute;
     left: -30px;
-    top: -25px;
+    top: -20%;
     height: 300px;
     box-shadow:
         1px 1px 1px rgba(150, 150, 150, .3),
@@ -154,7 +176,7 @@
 
 .callToAction div {
     position: absolute;
-    width: 1450px;
+    width: 100vw;
     height: 155px;
     left: -0.74px;
     top: -100px;
@@ -170,4 +192,88 @@
     color: #FF9147;
     font-size: 3rem;
     padding: 10px 20px;
+}
+
+.ourServices {
+    background-color: rgb(0, 0, 0);
+    color: #FF9147;
+    padding-bottom: 100px;
+}
+
+.servicesHeading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.servicesHeading h2 {
+    margin-right: 10%;
+}
+
+.servicesHeading div {
+    position: relative;
+    content: "";
+    height: 150px;
+    width: 100px;
+}
+
+.servicesHeading img {
+    width: 200px;
+    position: absolute;
+    top: -40px;
+    z-index: 99;
+}
+
+.cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 0 5vw;
+}
+
+.cards article {
+    margin: 20px;
+    border-radius: 10px;
+    background-color: rgba(100, 100, 100, 0.4);
+    display: flex;
+    flex-direction: column;
+}
+
+.cards img {
+    border-radius: 10px 10px 0px 0px;
+}
+
+.cards a {
+    text-decoration: none;
+    color: #FF9147;
+}
+
+.cards div {
+    width: 100%;
+    font-size: 22px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+.cards p {
+    height: fit-content;
+    text-align: center;
+    padding-left: 10px;
+    width: 70%;
+}
+
+.cards span:last-child {
+    height: 100%;
+    width: 25%;
+    background-color: #FF9147;
+    color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 0 0 10px 0;
 }

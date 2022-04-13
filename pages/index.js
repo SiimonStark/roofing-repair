@@ -58,7 +58,8 @@ export default function Home() {
           </div>
         </article>
       </div>
-      <div className='callToAction'>
+      <div className={styles.callToAction}>
+        <div></div>
         <h2>Call us today 541-890-6463</h2>
       </div>
       <div className='ourServices'>

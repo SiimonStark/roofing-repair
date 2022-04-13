@@ -133,3 +133,41 @@
 .briefingText p {
     margin: 10px 0;
 }
+
+.callToAction {
+    content: "";
+    background-color: rgba(130, 133, 129, 0.59);
+    background-image: url('https://images.unsplash.com/photo-1514947864179-c3b63c910b69?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1631&q=80');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    width: 100vw;
+    z-index: 1;
+    box-shadow: 0 -10px 10px rgba(0, 0, 0, .7);
+    border-top: rgba(0, 0, 0, .7) 7px solid;
+}
+
+.callToAction div {
+    position: absolute;
+    width: 1450px;
+    height: 155px;
+    left: -0.74px;
+    top: -100px;
+    z-index: 99;
+    content: "";
+    background-color: orange;
+    background: linear-gradient(180deg, #FFFFFF 41.78%, rgba(0, 0, 0, 0.85) 57.79%, #000000 66.52%, rgba(0, 0, 0, 0.4) 83.01%, rgba(0, 0, 0, 0.15) 96.59%);
+}
+
+.callToAction h2 {
+    background-color: rgba(0, 0, 0, .9);
+    border-radius: 10px;
+    color: #FF9147;
+    font-size: 3rem;
+    padding: 10px 20px;
+}

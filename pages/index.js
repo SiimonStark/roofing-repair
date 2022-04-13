@@ -37,6 +37,16 @@ export default function Home() {
         </div>
       </div>
       <div className={styles.briefing}>
+        <article>
+          <div>
+            <p>
+              Call us today at (541) 890-6463 and we will walk you through your roofing system step by step.
+            </p>
+            <p>
+              The only question you’ll have afterwards is “Where in the woods is Sassy the Sasquatch?”
+            </p>
+          </div>
+        </article>
         <article className={styles.briefingTextleft}>
           <div className={styles.briefingText}>
             <h3>Mission and Vision</h3>
@@ -54,7 +64,6 @@ export default function Home() {
             <h3>Professional Service</h3>
             <p>At Bigfoot Roofing we understand that every home is as unique as the family who lives inside them. That is why we are committed to handling every project on a case by case basis. On our fist meeting we listen to the homeowners concerns. We then physically inspect your entire roofing system, inside and out. We identify high risk leak areas, signs of previous leaks and mold, structural integrity and proper air flow to ensure that your home will breathe properly and stand strong for many years to come.
             </p>
-            <p>Call us today at (541) 890-6463 and we will walk you through your roofing system step by step. The only question you’ll have afterwards is “ Where in the woods is Sassy the Sasquatch?” </p>
           </div>
         </article>
       </div>
@@ -62,47 +71,49 @@ export default function Home() {
         <div></div>
         <h2>Call us today 541-890-6463</h2>
       </div>
-      <div className='ourServices'>
-        <div className='heading'>
+      <div className={styles.ourServices}>
+        <div className={styles.servicesHeading}>
           <h2>Our Services</h2>
-          <Image src='/logo_1.png' width={128} height={77} />
+          <div>
+            <img src='/BigFeet.png' alt='bigfoot tracks' />
+          </div>
         </div>
-        <div className='cards'>
+        <div className={styles.cards}>
           <article className='card'>
-            <Image src='/vercel.svg' width={300} height={300} />
-            <div>
-              <p>Consultation <FontAwesomeIcon icon={faChevronRight} /></p>
-            </div>
+            <Image src='/consultation.jpg' width={280} height={200} />
+            <a href='#'>
+              <div>
+                <p>Consultation</p>
+                <span> <FontAwesomeIcon icon={faChevronRight} /></span>
+              </div>
+            </a>
           </article>
           <article className='card'>
-            <Image src='/vercel.svg' width={300} height={300} />
-            <div>
-              <p>Residential <FontAwesomeIcon icon={faChevronRight} /></p>
-            </div>
+            <Image src='/residential.jpg' width={280} height={200} />
+            <a href='#'>
+              <div>
+                <p>Residential</p>
+                <span> <FontAwesomeIcon icon={faChevronRight} /></span>
+              </div>
+            </a>
           </article>
           <article className='card'>
-            <Image src='/vercel.svg' width={300} height={300} />
-            <div>
-              <p>Commercial <FontAwesomeIcon icon={faChevronRight} /></p>
-            </div>
+            <Image src='/commercial.jpg' width={280} height={200} />
+            <a href='#'>
+              <div>
+                <p>Commercial</p>
+                <span> <FontAwesomeIcon icon={faChevronRight} /></span>
+              </div>
+            </a>
           </article>
           <article className='card'>
-            <Image src='/vercel.svg' width={300} height={300} />
-            <div>
-              <p>Improvement <FontAwesomeIcon icon={faChevronRight} /></p>
-            </div>
-          </article>
-          <article className='card'>
-            <Image src='/vercel.svg' width={300} height={300} />
-            <div>
-              <p>Cleaning <FontAwesomeIcon icon={faChevronRight} /></p>
-            </div>
-          </article>
-          <article className='card'>
-            <Image src='/vercel.svg' width={300} height={300} />
-            <div>
-              <p>Repair <FontAwesomeIcon icon={faChevronRight} /></p>
-            </div>
+            <Image src='/repair.jpg' width={280} height={200} />
+            <a href='#'>
+              <div>
+                <p>Repair</p>
+                <span> <FontAwesomeIcon icon={faChevronRight} /></span>
+              </div>
+            </a>
           </article>
         </div>
       </div>

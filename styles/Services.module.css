@@ -1,0 +1,168 @@
+.consultation {
+  display: flex;
+}
+
+.heroImage img {
+  height: 60vh;
+  min-height: 400px;
+  width: 60vw;
+}
+
+.consultation article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 2rem;
+}
+
+.consultation h3 {
+  font-size: 34px;
+}
+
+.consultation p {
+  font-size: 20px;
+}
+
+.callLink {
+  background-color: #43513D;
+  color: white;
+  width: fit-content;
+  padding: 15px 20px;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 22px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.callLink a {
+  color: white;
+  text-decoration: none;
+}
+
+.callLink svg {
+  margin-left: 10px;
+  transform: rotate(260deg);
+}
+
+.materials {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.materials hr {
+  width: 70vw;
+  margin: 10px auto;
+}
+
+.gallery {
+  padding: 20px;
+}
+
+.controls {
+  background-color: #43513d44;
+  position: relative;
+  height: 70vh;
+  margin: 10px auto;
+  width: 90vw;
+}
+
+.content {
+  position: relative;
+  content: "";
+  height: 100%;
+  width: 100%;
+}
+
+.content img {
+  position: absolute;
+  height: 90%;
+  width: 85%;
+  top: 15px;
+  left: 15px;
+}
+
+.contentText {
+  background-color: #43513de0;
+  color: white;
+  position: absolute;
+  z-index: 99;
+  bottom: 15px;
+  right: 15px;
+  width: 80%;
+  height: 40%;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.6) 1px 1px 10px;
+
+  overflow-y: scroll;
+  cursor: ns-resize;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.contentText::-webkit-scrollbar {
+  display: none;
+}
+
+.contentText h4 {
+  font-size: 2rem;
+  letter-spacing: 0.15rem;
+  text-decoration: underline;
+}
+
+.controlsLeft,
+.controlsRight {
+  position: absolute;
+  top: 50%;
+  z-index: 99;
+  font-size: 2rem;
+  color: #43513D;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  background-color: white;
+  border-radius: 50%;
+  height: 2.25rem;
+  width: 2.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: .2px solid #43513D;
+}
+
+.controlsLeft:hover,
+.controlsRight:hover {
+  color: #43513db8;
+}
+
+.controlsLeft {
+  left: -5px;
+}
+
+.controlsRight {
+  right: -5px;
+}
+
+.controlsMarker {
+  position: absolute;
+  bottom: -25px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #43513D;
+}
+
+.controlsMarker svg {
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.controlsMarker .active {
+  background-color: #43513D !important;
+  border-radius: 50%;
+}

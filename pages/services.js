@@ -1,4 +1,5 @@
-import styles from '../styles/Services.module.css'
+import Head from 'next/head';
+import styles from '../styles/Services.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faCircleRight, faCircleLeft } from '@fortawesome/free-solid-svg-icons';
 import { faCircle } from '@fortawesome/free-regular-svg-icons';

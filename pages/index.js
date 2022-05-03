@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import { ContactWidget } from '../components/ContactWidget';
 import styles from '../styles/Home.module.css';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -22,7 +23,8 @@ export default function Home() {
           </h1>
         </div>
         <div className={styles.contactForm}>
-          <form>
+          <ContactWidget />
+          {/* <form>
             <div className={styles.formTitle}>
               <h3>Get a FREE Estimate Today!</h3>
               <h5>No cost, zero commitments!</h5>
@@ -34,7 +36,7 @@ export default function Home() {
               <small>* We do not share your personal info with 3rd parties</small>
               <input type='submit' value='Submit' />
             </div>
-          </form>
+          </form> */}
         </div>
       </div>
       <div className={styles.briefing}>

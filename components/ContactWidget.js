@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import styles from '../styles/Home.module.css';
+import styles from '../styles/ContactWidget.module.css';
+
 
 export const ContactWidget = () => {
     const [fields, setFields] = useState({});
@@ -79,7 +80,6 @@ export const ContactWidget = () => {
                 {!next ? fieldsDetails() : fieldsMessage()}
                 <small>* We do not share your personal info with 3rd parties</small>
                 {buttons()}
-                {/* {!next ? <input type='button' value='Next' onClick={() => setNext(true)} /> : <input type='submit' onSubmit={sendEmail} />} */}
             </div>
         </form>
     )

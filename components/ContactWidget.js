@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import MessageSuccess from '../components/MessageSuccess';
 import emailjs from '@emailjs/browser';
 import styles from '../styles/ContactWidget.module.css';
 
@@ -6,6 +7,7 @@ import styles from '../styles/ContactWidget.module.css';
 export const ContactWidget = () => {
     const [fields, setFields] = useState({});
     const [next, setNext] = useState(false);
+    const [messageSent, setMessageSent] = useState(false);
 
     useEffect(() => {
 
@@ -25,10 +27,12 @@ export const ContactWidget = () => {
 
         console.log(fields);
         if (!next) {
-            console.log('not done')
-        } else {
-            console.log('check required fields')
+            console.log('not done');
+            return;
         }
+        console.log({ fields });
+
+        onSuccess();
         // emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
         //     .then((result) => {
         //         console.log(result.text);
@@ -37,9 +41,18 @@ export const ContactWidget = () => {
         //     });
     };
 
+    const onSuccess = () => {
+        setMessageSent(true);
+
+        setTimeout(() => {
+            setMessageSent(false);
+            setNext(false);
+        }, 3500)
+    }
+
     const fieldsDetails = () => {
         return (
-            <div>
+            <div className={styles.fieldInputs}>
                 <input type='text' name='from_name' placeholder='Name' onChange={handleChange} />
                 <input type='text' name='phone' placeholder='Phone Number' onChange={handleChange} />
                 <input type='email' name='email' placeholder='Email' required onChange={handleChange} />
@@ -49,7 +62,7 @@ export const ContactWidget = () => {
 
     const fieldsMessage = () => {
         return (
-            <div>
+            <div className={styles.fieldInputs}>
                 <textarea name='message' placeholder='Include your details about your request here' onChange={handleChange}></textarea>
             </div>
         )
@@ -58,11 +71,13 @@ export const ContactWidget = () => {
     const buttons = () => {
         if (!next) {
             return (
-                <input type='button' value='Next' onClick={() => setNext(true)} />
+                <div className={styles.buttonRow}>
+                    <input type='button' value='Next' onClick={() => setNext(true)} />
+                </div>
             )
         } else {
             return (
-                <div>
+                <div className={styles.buttonRow}>
                     <input type='button' value='Back' onClick={() => setNext(false)} />
                     <input type='submit' onSubmit={sendEmail} />
                 </div>
@@ -72,6 +87,8 @@ export const ContactWidget = () => {
 
     return (
         <form onSubmit={sendEmail}>
+            {messageSent ? <MessageSuccess /> : null}
+            {messageSent ? <div className={styles.backDrop}></div> : null}
             <div className={styles.formTitle}>
                 <h3>Get a FREE Estimate Today!</h3>
                 <h5>No cost, zero commitments!</h5>

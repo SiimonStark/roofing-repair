@@ -1,3 +1,4 @@
+import React, { useState, useEffect, useRef } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import { ContactWidget } from '../components/ContactWidget';
@@ -6,6 +7,7 @@ import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Home() {
+
   return (
     <div className={styles.container}>
       {/* <Head>

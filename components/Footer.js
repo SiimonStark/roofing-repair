@@ -6,10 +6,11 @@ import Link from 'next/link';
 const Footer = () => {
     return (
         <footer>
+            <div className='forest'>
+                {/* forest image here */}
+            </div>
             <div className='footer-callToAction'>
-                <h2>BIGFOOT Roofing</h2>
-                <h3>Call us today</h3>
-                <h3>541-890-6463</h3>
+                {/* Call image here */}
             </div>
             <div className='footer-links'>
                 <div className='links-top'>

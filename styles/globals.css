@@ -54,21 +54,54 @@ nav a {
 
 /* Footer Styles */
 footer {
-  background-color: #43513D;
   border-top: 5px solid #13210B;
   border-bottom: 3px solid #13210B;
   display: flex;
-  justify-content: space-between;
-  padding: 10px 5vw;
+  justify-content: flex-end;
+  padding: 30px 5vw;
+  background-color: #43513D;
+  position: relative;
+  height: 200px;
 }
 
 footer a {
-  color: #13210B;
   transition: color .2s ease-in-out;
+  color: #13210B;
+  font-weight: 500;
 }
 
 footer a:hover {
   color: #FF9147;
+}
+
+.forest {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-image: url("../public/Forest.png");
+  background-position: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30%;
+  height: 100%;
+}
+
+.footer-callToAction {
+  content: "";
+  position: absolute;
+  left: 20%;
+  bottom: 0;
+  background-image: url(/_next/static/media/Footer.8b2c1bcb.png);
+  background-position: left;
+  background-size: 450px 150px;
+  background-repeat: no-repeat;
+  width: 60%;
+  height: 100%;
+}
+
+.starGroup {
+  margin-left: 10px;
 }
 
 .links-bottom {

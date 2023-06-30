@@ -92,7 +92,7 @@ footer a:hover {
   position: absolute;
   left: 20%;
   bottom: 0;
-  background-image: url(/_next/static/media/Footer.8b2c1bcb.png);
+  background-image: url("../public/Footer.png");
   background-position: left;
   background-size: 450px 150px;
   background-repeat: no-repeat;

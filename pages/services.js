@@ -1,10 +1,9 @@
-import Head from 'next/head';
 import Image from 'next/image'
 import { ServiceGallery } from '../components/ServiceGallery';
 import styles from '../styles/Services.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhone, faCircleRight, faCircleLeft } from '@fortawesome/free-solid-svg-icons';
-import { faCircle } from '@fortawesome/free-regular-svg-icons';
+import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { FaceOff } from '../components/FaceOff';
 
 const services = () => {
     return (
@@ -33,6 +32,15 @@ const services = () => {
                 </article>
             </section>
             <ServiceGallery />
+            <section className={styles.callContact}>
+                <div>
+                    <h3>Talk to a professional to get more info</h3>
+                    <button>Contact Us <FontAwesomeIcon icon={faEnvelope} /></button>
+                </div>
+            </section>
+            <br />
+            <FaceOff />
+            <br />
         </div>
     );
 }

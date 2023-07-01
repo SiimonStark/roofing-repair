@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Head from 'next/head';
+import Link from 'next/link';
 import Image from 'next/image';
 import { ContactWidget } from '../components/ContactWidget';
 import styles from '../styles/Home.module.css';
@@ -19,19 +20,6 @@ export default function Home() {
         </div>
         <div className={styles.contactForm}>
           <ContactWidget />
-          {/* <form>
-            <div className={styles.formTitle}>
-              <h3>Get a FREE Estimate Today!</h3>
-              <h5>No cost, zero commitments!</h5>
-            </div>
-            <div className={styles.formInputGroup}>
-              <input type='text' name='name' placeholder='Name' />
-              <input type='text' name='phone' placeholder='Phone Number' />
-              <input type="email" name="email" placeholder='Email' pattern=".+@globex\.com" required />
-              <small>* We do not share your personal info with 3rd parties</small>
-              <input type='submit' value='Submit' />
-            </div>
-          </form> */}
         </div>
       </div>
       <div className={styles.briefing}>
@@ -77,8 +65,8 @@ export default function Home() {
         </div>
         <div className={styles.cards}>
           <article className='card'>
-            <Image src='/consultation.jpg' width={280} height={200} />
-            <a href='#'>
+            <a href='/services'>
+              <Image src='/consultation.jpg' width={280} height={200} />
               <div>
                 <p>Consultation</p>
                 <span> <FontAwesomeIcon icon={faChevronRight} /></span>
@@ -86,8 +74,8 @@ export default function Home() {
             </a>
           </article>
           <article className='card'>
-            <Image src='/residential.jpg' width={280} height={200} />
-            <a href='#'>
+            <a href='/services'>
+              <Image src='/residential.jpg' width={280} height={200} />
               <div>
                 <p>Residential</p>
                 <span> <FontAwesomeIcon icon={faChevronRight} /></span>
@@ -95,8 +83,8 @@ export default function Home() {
             </a>
           </article>
           <article className='card'>
-            <Image src='/commercial.jpg' width={280} height={200} />
-            <a href='#'>
+            <a href='/services'>
+              <Image src='/commercial.jpg' width={280} height={200} />
               <div>
                 <p>Commercial</p>
                 <span> <FontAwesomeIcon icon={faChevronRight} /></span>
@@ -104,8 +92,8 @@ export default function Home() {
             </a>
           </article>
           <article className='card'>
-            <Image src='/repair.jpg' width={280} height={200} />
-            <a href='#'>
+            <a href='/services'>
+              <Image src='/repair.jpg' width={280} height={200} />
               <div>
                 <p>Repair</p>
                 <span> <FontAwesomeIcon icon={faChevronRight} /></span>

@@ -1,5 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
-import Head from 'next/head';
+import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { ContactWidget } from '../components/ContactWidget';

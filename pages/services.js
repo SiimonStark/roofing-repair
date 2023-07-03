@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from "next/legacy/image"
 import { ServiceGallery } from '../components/ServiceGallery';
 import styles from '../styles/Services.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

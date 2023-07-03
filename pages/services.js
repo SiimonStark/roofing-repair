@@ -39,7 +39,7 @@ const services = () => {
                 </div>
             </section>
             <br />
-            <FaceOff />
+            {/* <FaceOff /> */}
             <br />
         </div>
     );

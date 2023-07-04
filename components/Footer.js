@@ -9,7 +9,7 @@ const Footer = () => {
             <div className='forest'>
                 {/* forest image here */}
             </div>
-            <a href="tel:+15418906463">
+            <a href="tel:+15418907680">
                 <div className='footer-callToAction'>
                     {/* Call image here */}
                 </div>

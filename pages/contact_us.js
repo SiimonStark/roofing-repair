@@ -1,7 +1,12 @@
+import { ContactWidget } from '../components/ContactWidget';
+import styles from '../styles/Home.module.css';
+
 const contact_us = () => {
     return (
         <div className="contact_us">
-            <p>Contact Us</p>
+            <div className={styles.contactForm}>
+                <ContactWidget />
+            </div>
         </div>
     );
 }

@@ -24,8 +24,8 @@ const services = () => {
                         <p>We will work with you to turn your vision into a reality. We pride ourselves on our practicality.</p>
                     </div>
                     <div className={styles.callLink}>
-                        <a href="tel:+15418906463">
-                            541-890-6463
+                        <a href="tel:+15418907680">
+                            (541)890-7680
                             <FontAwesomeIcon icon={faPhone} />
                         </a>
                     </div>

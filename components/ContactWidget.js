@@ -9,6 +9,8 @@ export const ContactWidget = () => {
     const [next, setNext] = useState(false);
     const [messageSent, setMessageSent] = useState(false);
 
+    const form = useRef();
+
     useEffect(() => {
 
     }, [next]);
@@ -33,12 +35,12 @@ export const ContactWidget = () => {
         console.log({ fields });
 
         onSuccess();
-        // emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
-        //     .then((result) => {
-        //         console.log(result.text);
-        //     }, (error) => {
-        //         console.log(error.text);
-        //     });
+        emailjs.sendForm('service_ya02usr', 'confirm_request_template', form.current, 'um3qH1JMJI9bgUhEx')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
     };
 
     const onSuccess = () => {
@@ -86,7 +88,7 @@ export const ContactWidget = () => {
     }
 
     return (
-        <form onSubmit={sendEmail}>
+        <form ref={form} onSubmit={sendEmail}>
             {messageSent ? <MessageSuccess /> : null}
             {messageSent ? <div className={styles.backDrop}></div> : null}
             <div className={styles.formTitle}>

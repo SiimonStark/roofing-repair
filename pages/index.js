@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { ContactWidget } from '../components/ContactWidget';
 import styles from '../styles/Home.module.css';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';

@@ -1,12 +1,12 @@
 import Link from 'next/link';
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 const NavBar = () => {
     return (
         <nav>
             <div className='branding'>
                 <div className='logo'>
-                    <Link href="/">
+                    <Link href="/" legacyBehavior>
                         <Image src='/logo_3.png' width={128} height={77} />
                     </Link>
                     <div className='decor-topNotch' />

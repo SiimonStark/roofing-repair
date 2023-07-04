@@ -56,8 +56,8 @@ export const ServiceGallery = () => {
           </div>
           <div className={styles.controlsMarker}>
             {materials.map((m, i) => (i === index
-              ? <FontAwesomeIcon id="active" className={styles.active} icon={faCircle} />
-              : <FontAwesomeIcon icon={faCircle} />))}
+              ? <FontAwesomeIcon key={i} id="active" className={styles.active} icon={faCircle} />
+              : <FontAwesomeIcon key={i} icon={faCircle} onClick={() => setIndex(i)} />))}
           </div>
         </div>
       </div>

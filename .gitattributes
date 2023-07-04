@@ -1,0 +1,2 @@
+*.jpg !text !filter !merge !diff
+*.JPEG !text !filter !merge !diff

@@ -1,10 +1,10 @@
-import styles from '../styles/Services.module.css';
+import styles from '../styles/AboutUs.module.css';
 
 const about_us = () => {
     return (
         <div className={styles.about_us}>
             <section class={styles.hero}>
-                <img src="/finished_jobs/bigfootroof_flag.JPG" />
+                <img src="https://imgur.com/pvI2LHE.jpg" />
             </section>
             <article>
                 <h4>A Tale of Two Brothers</h4>
@@ -34,6 +34,7 @@ const about_us = () => {
                 <img src="https://imgur.com/aPjRdwM.jpg" />
                 <img src="https://imgur.com/wSrXPut.jpg" />
                 <img src="https://imgur.com/KMON4LP.jpg" />
+                <img src="https://imgur.com/pvI2LHE.jpg" />
                 <img src="https://imgur.com/D635pA0.jpg" />
             </section>
         </div>

@@ -9,9 +9,11 @@ const Footer = () => {
             <div className='forest'>
                 {/* forest image here */}
             </div>
-            <div className='footer-callToAction'>
-                {/* Call image here */}
-            </div>
+            <a href="tel:+15418906463">
+                <div className='footer-callToAction'>
+                    {/* Call image here */}
+                </div>
+            </a>
             <div className='footer-links'>
                 <div className='links-top'>
                     <FontAwesomeIcon icon={faInstagram} />

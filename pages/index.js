@@ -25,7 +25,7 @@ export default function Home() {
         <article>
           <div>
             <p>
-              Call us today at (541) 890-6463 and we will walk you through your roofing system step by step.
+              Call us today at <a href='tel:+15418906463' style={{ "color": "white" }}>(541) 890-6463</a> and we will walk you through your roofing system step by step.
             </p>
             <p>
               The only question you’ll have afterwards is “Where in the woods is Sassy the Sasquatch?”
@@ -53,7 +53,7 @@ export default function Home() {
       </div>
       <div className={styles.callToAction}>
         <div></div>
-        <h2>Call us today 541-890-6463</h2>
+        <h2>Call us today <a href='tel:+15418906463'>541-890-6463</a></h2>
       </div>
       <div className={styles.ourServices}>
         <div className={styles.servicesHeading}>

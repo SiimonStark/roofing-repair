@@ -24,7 +24,7 @@ const services = () => {
                         <p>We will work with you to turn your vision into a reality. We pride ourselves on our practicality.</p>
                     </div>
                     <div className={styles.callLink}>
-                        <a href="call:15418906463">
+                        <a href="tel:+15418906463">
                             541-890-6463
                             <FontAwesomeIcon icon={faPhone} />
                         </a>
@@ -35,7 +35,9 @@ const services = () => {
             <section className={styles.callContact}>
                 <div>
                     <h3>Talk to a professional to get more info</h3>
-                    <button>Contact Us <FontAwesomeIcon icon={faEnvelope} /></button>
+                    <a href="mailto:sobigfootroofing@gmail.com">
+                        <button>Contact Us <FontAwesomeIcon icon={faEnvelope} /></button>
+                    </a>
                 </div>
             </section>
             <br />

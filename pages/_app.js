@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Analytics from '@vercel/analytics';
 import Layout from '../components/layout';
 import '../styles/globals.css';
 import { config } from '@fortawesome/fontawesome-svg-core';
@@ -15,6 +16,7 @@ function MyApp({ Component, pageProps }) {
         <link rel="icon" href="/BF_Icon.png" />
       </Head>
       <Component {...pageProps} />
+      <Analytics />
     </Layout>
   );
 }
